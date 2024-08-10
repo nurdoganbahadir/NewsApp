@@ -23,17 +23,29 @@
       class="container-fluid bg-warning p-3 d-flex justify-content-sm-between align-items-center justify-content-xl-around"
     >
       <h1>News</h1>
-      <select class="form-select w-25 h-50" aria-label="Default select example">
-        <option selected>Country</option>
-        <option value="1">Türkiye</option>
-        <option value="2">Fransa</option>
-        <option value="3">İspanya</option>
-        <option value="4">Almanya</option>
-      </select>
+      <div class="w-25 d-flex align-items-center">
+        <input
+          type="text"
+          name=""
+          id="searchInput"
+          placeholder="Search"
+          class="rounded-2 border-0 p-2 w-100 m-1"
+        />
+        <select
+          class="form-select w-50 h-50"
+          aria-label="Default select example"
+        >
+          <option selected>Country</option>
+          <option value="1">Türkiye</option>
+          <option value="2">Fransa</option>
+          <option value="3">İspanya</option>
+          <option value="4">Almanya</option>
+        </select>
+      </div>
     </header>
     <main class="container my-5">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-xl-4">
+        <!-- <div class="col-sm-12 col-md-6 col-xl-4">
           <div class="card">
             <img src="./img/404.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -46,7 +58,7 @@
               <a href=""></a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
     <footer
@@ -60,7 +72,7 @@
           ><i class="fa-brands fa-linkedin"></i
         ></a>
       </div>
-      <p>Created by Nurdoğan Bahadır</p>
+      <p class="fw-bold">Created by Nurdoğan Bahadır</p>
     </footer>
 
     <script src="./app.js"></script>
