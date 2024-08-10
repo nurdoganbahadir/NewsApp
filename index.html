@@ -10,10 +10,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header
-      class="container-fluid bg-warning p-3 d-flex justify-content-between align-items-center"
+      class="container-fluid bg-warning p-3 d-flex justify-content-sm-between align-items-center justify-content-xl-around"
     >
       <h1>News</h1>
       <select class="form-select w-25 h-50" aria-label="Default select example">
@@ -24,7 +31,7 @@
         <option value="4">Almanya</option>
       </select>
     </header>
-    <main class="container mt-5">
+    <main class="container my-5">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-xl-4">
           <div class="card">
@@ -36,11 +43,25 @@
                 the bulk of the card's content.
               </p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href=""></a>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <footer
+      class="container-fluid bg-warning text-center position-absolute bottom-0"
+    >
+      <div class="fs-1">
+        <a href="https://github.com/nurdoganbahadir"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/nurdoganbahadir/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p>Created by Nurdoğan Bahadır</p>
+    </footer>
 
     <script src="./app.js"></script>
     <script
