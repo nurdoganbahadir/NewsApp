@@ -2,23 +2,25 @@
 const searchInput = document.querySelector("#searchInput");
 const country = document.querySelector(".form-select");
 document.querySelector(".btn").onclick = () => {
-  const news = async () => {
-    const BASE_URL = "https://newsapi.org/v2/everything";
-    const API_KEY = "2e64332ddcb64dc7b50dd5c1ab45d8a4";
-    const query = searchInput.value;
-    const language = country.options[country.selectedIndex].value;
-
-    try {
-      const URL = `${BASE_URL}?q=${query}&apiKey=${API_KEY}&language=${language}`;
-      const res = await fetch(URL);
-      const data = await res.json();
-      newsScreen(data.articles);
-    } catch (error) {
-      console.log(error);
-    }
-  };
   news();
 };
+
+const news = async () => {
+  const BASE_URL = "https://newsapi.org/v2/everything";
+  const API_KEY = "2e64332ddcb64dc7b50dd5c1ab45d8a4";
+  const query = searchInput.value || "new";
+  const language = country.options[country.selectedIndex].value;
+
+  try {
+    const URL = `${BASE_URL}?q=${query}&apiKey=${API_KEY}&language=${language}`;
+    const res = await fetch(URL);
+    const data = await res.json();
+    newsScreen(data.articles);
+  } catch (error) {
+    console.log(error);
+  }
+};
+news();
 
 function newsScreen(news) {
   const rowScreen = document.querySelector(".row");
