@@ -7,7 +7,7 @@ document.querySelector(".btn").onclick = () => {
 
 const news = async () => {
   const BASE_URL = "https://newsapi.org/v2/everything";
-  const API_KEY = "2e64332ddcb64dc7b50dd5c1ab45d8a4";
+  const API_KEY = "";
   const query = searchInput.value || "new";
   const language = country.options[country.selectedIndex].value;
 
